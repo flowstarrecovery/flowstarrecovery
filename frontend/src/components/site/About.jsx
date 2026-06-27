@@ -4,7 +4,7 @@ const TRUST = [
   { icon: Award, label: "Boutique focus", body: "We work fewer cases at a time so every claim gets senior attention." },
   { icon: Shield, label: "Contingency only", body: "Nothing is owed unless and until we recover funds in your name." },
   { icon: Users, label: "Hands-on team", body: "Licensed paralegals and recovery specialists — not call-center reps." },
-  { icon: TrendingUp, label: "Documented results", body: "Over $12.4M returned to former owners and heirs since 2018." },
+  { icon: TrendingUp, label: "Outcome-focused", body: "We work on contingency — our success is tied directly to yours." },
 ];
 
 export default function About() {
@@ -26,9 +26,9 @@ export default function About() {
             A quieter, more <em className="font-medium">careful</em> way to recover what&apos;s yours.
           </h2>
           <p className="mt-6 text-lg text-[#526477] leading-relaxed">
-            Flowstar was founded in 2018 by a small team of paralegals and title researchers who kept seeing the same
-            story: rightful owners losing access to surplus proceeds simply because no one walked them through the
-            paperwork. We built Flowstar to close that gap — with discipline, integrity, and a contingency-only model.
+            Flowstar Asset Recovery is a boutique firm of paralegals and title researchers focused on a single
+            problem: rightful owners losing access to surplus proceeds simply because no one walks them
+            through the paperwork. We close that gap — with discipline, integrity, and a contingency-only model.
           </p>
 
           <div className="mt-12 grid sm:grid-cols-2 gap-5">

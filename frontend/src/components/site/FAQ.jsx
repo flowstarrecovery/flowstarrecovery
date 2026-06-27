@@ -11,7 +11,7 @@ const FAQS = [
   },
   {
     q: "How long does the recovery process take?",
-    a: "Most cases resolve in 30 to 90 days from engagement. Complex matters involving probate, multiple lien-holders, or contested ownership can take longer. We'll give you a realistic timeline after our initial review.",
+    a: "Timelines vary significantly by state, case type, and complexity. Straightforward claims can move quickly; matters involving probate, multiple lien-holders, or contested ownership typically take longer. We provide a realistic, case-specific timeline after our initial review.",
   },
   {
     q: "Do I need to live in the same state as the property?",

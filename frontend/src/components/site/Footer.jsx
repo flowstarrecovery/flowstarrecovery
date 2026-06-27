@@ -11,7 +11,7 @@ export default function Footer() {
             <span className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-[#D4AF37] text-[#0C2340] font-serif text-2xl">F</span>
             <div>
               <div className="font-serif text-2xl">Flowstar Asset Recovery</div>
-              <div className="text-[10px] tracking-[0.3em] uppercase text-[#C1D9E8]">Est. 2018</div>
+              <div className="text-[10px] tracking-[0.3em] uppercase text-[#C1D9E8]">Surplus Funds Specialists</div>
             </div>
           </div>
           <p className="text-[#C1D9E8] max-w-md leading-relaxed">

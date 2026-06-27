@@ -73,15 +73,6 @@ export default function Hero() {
               className="rounded-[24px] shadow-2xl object-cover w-full h-[520px]"
               data-testid="hero-image"
             />
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-black/5 max-w-[260px]">
-              <div className="text-[10px] uppercase tracking-[0.25em] text-[#526477]">Avg Recovery</div>
-              <div className="font-serif text-4xl text-[#0C2340] mt-1">$47,200</div>
-              <div className="text-xs text-[#526477] mt-1">per successful claim, 2024</div>
-            </div>
-            <div className="absolute -top-6 -right-6 bg-[#0C2340] text-white rounded-2xl px-5 py-4 shadow-xl">
-              <div className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37]">Funds Returned</div>
-              <div className="font-serif text-3xl mt-1">$12.4M+</div>
-            </div>
           </div>
         </motion.div>
       </div>

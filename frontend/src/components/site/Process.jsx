@@ -23,7 +23,7 @@ const STEPS = [
     n: "04",
     icon: Wallet,
     title: "You Get Paid",
-    body: "Funds are released directly to you via certified check or wire, less our agreed contingency fee. Most cases resolve in 30 – 90 days.",
+    body: "Funds are released directly to you via certified check or wire, less our agreed contingency fee. Timelines vary by jurisdiction and case complexity.",
   },
 ];
 
