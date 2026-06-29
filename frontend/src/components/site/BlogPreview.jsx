@@ -8,9 +8,27 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 export default function BlogPreview() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    axios.get(`${API}/blog/posts`).then((r) => setPosts(r.data.slice(0, 3))).catch(() => {});
-  }, []);
+useEffect(() => {
+  axios
+    .get(`${API}/blog/posts`)
+    .then((r) => {
+      console.log("API Response:", r.data);
+      console.log("Is array?", Array.isArray(r.data));
+
+      if (Array.isArray(r.data)) {
+        setPosts(r.data.slice(0, 3));
+      } else if (Array.isArray(r.data.posts)) {
+        setPosts(r.data.posts.slice(0, 3));
+      } else {
+        console.error("Unexpected API response:", r.data);
+        setPosts([]);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      setPosts([]);
+    });
+}, []);
 
   return (
     <section data-testid="blog-preview" className="relative py-24 lg:py-32 bg-[#F8FBFC]">
