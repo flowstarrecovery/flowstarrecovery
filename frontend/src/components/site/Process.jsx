@@ -40,7 +40,7 @@ export default function Process() {
           </div>
           <div className="lg:col-span-5 text-[#526477] text-lg leading-relaxed">
             Most claimants never see a dollar of their surplus simply because the notice never reached them.
-            We close that gap — quietly, professionally, on contingency.
+            We close that gap — quietly & professionally.
           </div>
         </div>
 
