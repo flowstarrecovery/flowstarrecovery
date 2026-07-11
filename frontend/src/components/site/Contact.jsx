@@ -43,8 +43,8 @@ export default function Contact() {
           </p>
 
           <div className="mt-10 space-y-4">
-            <div className="flex items-center gap-3 text-[#C1D9E8]"><Mail size={16} className="text-[#D4AF37]" /> hello@flowstarrecovery.com</div>
-            <div className="flex items-center gap-3 text-[#C1D9E8]"><Phone size={16} className="text-[#D4AF37]" /> (800) 555-0188</div>
+            <div className="flex items-center gap-3 text-[#C1D9E8]"><Mail size={16} className="text-[#D4AF37]" /> contact@flowstarrecovery.com</div>
+            <div className="flex items-center gap-3 text-[#C1D9E8]"><Phone size={16} className="text-[#D4AF37]" /> (513) 409-3935</div>
           </div>
         </div>
 
