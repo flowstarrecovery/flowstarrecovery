@@ -20,7 +20,7 @@ export default function Footer() {
           </p>
           <div className="mt-8 space-y-2 text-sm text-[#C1D9E8]">
             <div className="flex items-center gap-2"><Mail size={14} /> hello@flowstarrecovery.com</div>
-            <div className="flex items-center gap-2"><Phone size={14} /> (800) 555-0188</div>
+            <div className="flex items-center gap-2"><Phone size={14} /> (513) 409-3935</div>
             <div className="flex items-center gap-2"><MapPin size={14} /> Operating in all 50 states</div>
           </div>
         </div>
