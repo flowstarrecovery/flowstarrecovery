@@ -5,7 +5,7 @@ import { Loader2, Mail, Phone } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API = "https://recover-capital-1.preview.emergentagent.com/api";
 
 export default function Contact() {
   const [form, setForm] = useState({ full_name: "", email: "", phone: "", message: "" });
