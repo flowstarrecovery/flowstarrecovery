@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const NAV = [
   { label: "Process", href: "/#process" },
   { label: "Eligibility", href: "/#checker" },
-  { label: "Resources", href: "/resources" },
+  { label: "Resources", href: "/#resources" },
   { label: "FAQ", href: "/#faq" },
 ];
 
@@ -62,12 +62,12 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <a href="/#checker">
+          <a href="/#contact">
             <Button
               data-testid="header-cta"
               className="bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full px-6 h-11 shadow-none"
             >
-              Check Eligibility
+              Contact Us
             </Button>
           </a>
         </div>
@@ -95,12 +95,12 @@ export default function Header() {
                 {n.label}
               </a>
             ))}
-            <a href="/#checker">
+            <a href="/#contact">
               <Button
                 data-testid="mobile-header-cta"
                 className="w-full bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full"
               >
-                Check Eligibility
+                Contact Us
               </Button>
             </a>
           </div>

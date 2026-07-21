@@ -30,7 +30,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <section data-testid="blog-preview" className="relative py-24 lg:py-32 bg-[#F8FBFC]">
+    <section data-testid="blog-preview" id="resources" className="relative py-24 lg:py-32 bg-[#F8FBFC]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-6">
           <div>
