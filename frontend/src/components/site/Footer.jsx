@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="lg:col-span-2">
           <div className="uppercase tracking-[0.2em] text-xs text-[#D4AF37] mb-4">Learn</div>
           <ul className="space-y-3 text-sm">
-            <li><Link to="/resources" className="hover:text-[#D4AF37] transition-colors">Resources</Link></li>
+            <li><a href="/#resources" className="hover:text-[#D4AF37] transition-colors">Resources</a></li>
             <li><a href="/#faq" className="hover:text-[#D4AF37] transition-colors">FAQ</a></li>
             <li><a href="/#about" className="hover:text-[#D4AF37] transition-colors">About</a></li>
           </ul>
