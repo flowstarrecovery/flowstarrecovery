@@ -38,8 +38,8 @@ export default function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-2 group"
         >
-          <span className="relative inline-flex items-center justify-center w-9 h-9 rounded-md bg-[#0C2340] text-[#D4AF37] font-serif text-xl">
-            F
+          <span className="relative inline-flex items-center justify-center w-9 h-9 rounded-md bg-white border border-[#0C2340]/10 overflow-hidden">
+            <img src="/flowstar-logo.png" alt="Flowstar" className="w-full h-full object-contain p-0.5" />
             <span className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#D4AF37]" />
           </span>
           <div className="leading-tight">
