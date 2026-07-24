@@ -36,14 +36,14 @@ export default function Header() {
           to="/"
           data-testid="header-logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
         >
-          <span className="relative inline-flex items-center justify-center w-9 h-9 rounded-md bg-white border border-[#0C2340]/10 overflow-hidden">
+          <span className="relative inline-flex items-center justify-center w-12 h-12 rounded-md bg-white border border-[#0C2340]/10 overflow-hidden">
             <img src="/flowstar-logo.png" alt="Flowstar" className="w-full h-full object-contain p-0.5" />
           </span>
           <div className="leading-tight">
-            <div className="font-serif text-xl text-[#0C2340]">Flowstar</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#526477]">Asset Recovery</div>
+            <div className="font-serif text-2xl text-[#0C2340]">Flowstar</div>
+            <div className="text-xs tracking-[0.3em] uppercase text-[#526477]">Asset Recovery</div>
           </div>
         </Link>
 
