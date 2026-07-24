@@ -40,7 +40,6 @@ export default function Header() {
         >
           <span className="relative inline-flex items-center justify-center w-9 h-9 rounded-md bg-white border border-[#0C2340]/10 overflow-hidden">
             <img src="/flowstar-logo.png" alt="Flowstar" className="w-full h-full object-contain p-0.5" />
-            <span className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#D4AF37]" />
           </span>
           <div className="leading-tight">
             <div className="font-serif text-xl text-[#0C2340]">Flowstar</div>
