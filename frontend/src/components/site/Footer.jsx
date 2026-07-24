@@ -8,9 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <div className="flex items-center gap-3 mb-6">
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-white border border-white/10 overflow-hidden">
-              <img src="/flowstar-logo.png" alt="Flowstar" className="w-full h-full object-contain p-0.5" />
-            </span>
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-[#D4AF37] text-[#0C2340] font-serif text-2xl">F</span>
             <div>
               <div className="font-serif text-2xl">Flowstar Asset Recovery</div>
               <div className="text-[10px] tracking-[0.3em] uppercase text-[#C1D9E8]">Surplus Funds Specialists</div>
