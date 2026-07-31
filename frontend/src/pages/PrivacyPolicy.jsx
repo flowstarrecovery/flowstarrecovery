@@ -4,7 +4,8 @@ import { ArrowLeft } from "lucide-react";
 
 const COMPANY = "Flowstar Asset Recovery, LLC";
 const EMAIL = "hello@flowstarrecovery.com";
-const PHONE = "(800) 555-0188";
+const PHONE = "513-409-3935";
+const ADDRESS = "2775 Orchard Run Rd PMB 322, Dayton, OH 45449";
 const SITE = "https://flowstarrecovery.com";
 
 function Section({ title, children }) {
@@ -122,6 +123,7 @@ export default function PrivacyPolicy() {
           <p>For questions about this Privacy Policy or our data practices, contact:</p>
           <div className="text-[#0C2340]">
             <p>{COMPANY}</p>
+            <p>{ADDRESS}</p>
             <p>{EMAIL}</p>
             <p>{PHONE}</p>
           </div>

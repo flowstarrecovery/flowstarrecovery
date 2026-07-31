@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { Loader2, Mail, Phone } from "lucide-react";
+import { Loader2, Mail, Phone, MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -52,7 +52,8 @@ export default function Contact() {
 
           <div className="mt-10 space-y-4">
             <div className="flex items-center gap-3 text-[#C1D9E8]"><Mail size={16} className="text-[#D4AF37]" /> hello@flowstarrecovery.com</div>
-            <div className="flex items-center gap-3 text-[#C1D9E8]"><Phone size={16} className="text-[#D4AF37]" /> (800) 555-0188</div>
+            <div className="flex items-center gap-3 text-[#C1D9E8]"><Phone size={16} className="text-[#D4AF37]" /> 513-409-3935</div>
+            <div className="flex items-start gap-3 text-[#C1D9E8]"><MapPin size={16} className="text-[#D4AF37] mt-0.5" /> <span>2775 Orchard Run Rd PMB 322<br />Dayton, OH 45449</span></div>
           </div>
         </div>
 
