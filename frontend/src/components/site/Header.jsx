@@ -24,11 +24,13 @@ export default function Header() {
 
   useEffect(() => { setOpen(false); }, [pathname]);
 
+  const solid = scrolled || pathname === "/privacy" || pathname === "/terms";
+
   return (
     <header
       data-testid="site-header"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-white/80 backdrop-blur-xl border-b border-black/5" : "bg-transparent"
+        solid ? "bg-white/80 backdrop-blur-xl border-b border-black/5" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
