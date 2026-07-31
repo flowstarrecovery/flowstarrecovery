@@ -5,6 +5,7 @@ import Home from "@/pages/Home";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsConditions from "@/pages/TermsConditions";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/resources" element={<BlogIndex />} />
             <Route path="/resources/:slug" element={<BlogPost />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsConditions />} />
           </Routes>
         </main>
         <Footer />
