@@ -59,7 +59,6 @@ export default function Footer() {
           <div className="flex gap-6 mt-3 md:mt-0">
             <Link to="/privacy" className="hover:text-[#D4AF37]">Privacy</Link>
             <Link to="/terms" className="hover:text-[#D4AF37]">Terms</Link>
-            <a href="#" className="hover:text-[#D4AF37]">Disclosures</a>
           </div>
         </div>
       </div>
