@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Home from "@/pages/Home";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/resources" element={<BlogIndex />} />
             <Route path="/resources/:slug" element={<BlogPost />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
