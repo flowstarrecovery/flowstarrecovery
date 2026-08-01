@@ -247,11 +247,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://flowstarrecovery.com",
-        "https://www.flowstarrecovery.com",
-    ],
-    allow_origin_regex=r"https://flowstarrecovery-.*\.vercel\.app",
     allow_credentials=True,
     allow_origins=os.environ.get(
         "CORS_ORIGINS",
