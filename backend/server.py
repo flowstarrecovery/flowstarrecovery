@@ -253,6 +253,11 @@ app.add_middleware(
     ],
     allow_origin_regex=r"https://flowstarrecovery-.*\.vercel\.app",
     allow_credentials=True,
+    allow_origins=os.environ.get(
+        "CORS_ORIGINS",
+        "https://flowstarrecovery.com,https://www.flowstarrecovery.com"
+    ).split(","),
+    allow_origin_regex=r"https://flowstarrecovery-.*\.vercel\.app",
     allow_methods=["*"],
     allow_headers=["*"],
 )
