@@ -20,8 +20,8 @@ export default function Footer() {
           </p>
           <div className="mt-8 space-y-2 text-sm text-[#C1D9E8]">
             <div className="flex items-center gap-2"><Mail size={14} /> hello@flowstarrecovery.com</div>
-            <div className="flex items-center gap-2"><Phone size={14} /> (513) 409-3935</div>
-            <div className="flex items-center gap-2"><MapPin size={14} /> Operating in all 50 states</div>
+            <div className="flex items-center gap-2"><Phone size={14} /> 513-409-3935</div>
+            <div className="flex items-start gap-2"><MapPin size={14} className="mt-0.5" /> <span>2775 Orchard Run Rd PMB 322, Dayton, OH 45449</span></div>
           </div>
         </div>
 
@@ -57,9 +57,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row items-center justify-between text-xs text-[#C1D9E8]">
           <div>© {new Date().getFullYear()} Flowstar Asset Recovery LLC. All rights reserved.</div>
           <div className="flex gap-6 mt-3 md:mt-0">
-            <a href="#" className="hover:text-[#D4AF37]">Privacy</a>
-            <a href="#" className="hover:text-[#D4AF37]">Terms</a>
-            <a href="#" className="hover:text-[#D4AF37]">Disclosures</a>
+            <Link to="/privacy" className="hover:text-[#D4AF37]">Privacy</Link>
+            <Link to="/terms" className="hover:text-[#D4AF37]">Terms</Link>
           </div>
         </div>
       </div>

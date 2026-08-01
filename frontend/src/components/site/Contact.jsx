@@ -1,14 +1,17 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { Loader2, Mail, Phone } from "lucide-react";
+import { Loader2, Mail, Phone, MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 export default function Contact() {
   const [form, setForm] = useState({ full_name: "", email: "", phone: "", message: "" });
+  const [consentTransactional, setConsentTransactional] = useState(false);
+  const [consentPromotional, setConsentPromotional] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const submit = async (e) => {
@@ -19,9 +22,14 @@ export default function Contact() {
     }
     setLoading(true);
     try {
-      await axios.post(`${API}/contact`, form);
-      toast.success("Thanks — we&apos;ll be in touch shortly.");
+      await axios.post(`${API}/contact`, {
+        ...form,
+        message: `${form.message}\n\n[SMS consent — transactional: ${consentTransactional ? "yes" : "no"}, promotional: ${consentPromotional ? "yes" : "no"}]`,
+      });
+      toast.success("Thanks — we'll be in touch shortly.");
       setForm({ full_name: "", email: "", phone: "", message: "" });
+      setConsentTransactional(false);
+      setConsentPromotional(false);
     } catch (err) {
       toast.error("Could not send. Please try again.");
     } finally {
@@ -44,7 +52,8 @@ export default function Contact() {
 
           <div className="mt-10 space-y-4">
             <div className="flex items-center gap-3 text-[#C1D9E8]"><Mail size={16} className="text-[#D4AF37]" /> hello@flowstarrecovery.com</div>
-            <div className="flex items-center gap-3 text-[#C1D9E8]"><Phone size={16} className="text-[#D4AF37]" /> (513) 409-3935</div>
+            <div className="flex items-center gap-3 text-[#C1D9E8]"><Phone size={16} className="text-[#D4AF37]" /> 513-409-3935</div>
+            <div className="flex items-start gap-3 text-[#C1D9E8]"><MapPin size={16} className="text-[#D4AF37] mt-0.5" /> <span>2775 Orchard Run Rd PMB 322<br />Dayton, OH 45449</span></div>
           </div>
         </div>
 
@@ -92,6 +101,34 @@ export default function Contact() {
               className="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/40"
               placeholder="Briefly describe your situation..."
             />
+          </div>
+          <div className="space-y-4 pt-1">
+            <label className="flex items-start gap-3 cursor-pointer" data-testid="consent-transactional-label">
+              <Checkbox
+                data-testid="consent-transactional"
+                checked={consentTransactional}
+                onCheckedChange={(v) => setConsentTransactional(!!v)}
+                className="mt-1 border-white/30 data-[state=checked]:bg-[#D4AF37] data-[state=checked]:border-[#D4AF37] data-[state=checked]:text-[#0C2340]"
+              />
+              <span className="text-sm text-[#C1D9E8] leading-relaxed">
+                I consent to receive SMS messages from Flowstar Asset Recovery, LLC related to account updates,
+                transaction confirmations, service alerts, or other non-promotional communications. Message
+                frequency may vary. Msg&amp;data rates may apply. Reply STOP to unsubscribe. HELP for assistance.
+              </span>
+            </label>
+            <label className="flex items-start gap-3 cursor-pointer" data-testid="consent-promotional-label">
+              <Checkbox
+                data-testid="consent-promotional"
+                checked={consentPromotional}
+                onCheckedChange={(v) => setConsentPromotional(!!v)}
+                className="mt-1 border-white/30 data-[state=checked]:bg-[#D4AF37] data-[state=checked]:border-[#D4AF37] data-[state=checked]:text-[#0C2340]"
+              />
+              <span className="text-sm text-[#C1D9E8] leading-relaxed">
+                I agree to receive occasional promotional SMS from Flowstar Asset Recovery, LLC about offers,
+                discounts, or marketing updates. Message frequency may vary. Msg&amp;data rates may apply. Reply
+                STOP to opt out, HELP for assistance.
+              </span>
+            </label>
           </div>
           <button
             data-testid="contact-submit"

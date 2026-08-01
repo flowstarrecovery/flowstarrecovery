@@ -243,8 +243,15 @@ async def get_blog_post(slug: str):
 
 app.include_router(api_router)
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=[
+        "https://flowstarrecovery.com",
+        "https://www.flowstarrecovery.com",
+    ],
+    allow_origin_regex=r"https://flowstarrecovery-.*\.vercel\.app",
     allow_credentials=True,
     allow_origins=os.environ.get(
         "CORS_ORIGINS",
@@ -254,7 +261,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.on_event("shutdown")
 async def shutdown_db_client():

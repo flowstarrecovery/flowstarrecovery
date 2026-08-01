@@ -24,11 +24,13 @@ export default function Header() {
 
   useEffect(() => { setOpen(false); }, [pathname]);
 
+  const solid = scrolled || pathname === "/privacy" || pathname === "/terms";
+
   return (
     <header
       data-testid="site-header"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-white/80 backdrop-blur-xl border-b border-black/5" : "bg-transparent"
+        solid ? "bg-white/80 backdrop-blur-xl border-b border-black/5" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
@@ -36,15 +38,14 @@ export default function Header() {
           to="/"
           data-testid="header-logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
         >
-          <span className="relative inline-flex items-center justify-center w-9 h-9 rounded-md bg-[#0C2340] text-[#D4AF37] font-serif text-xl">
+          <span className="relative inline-flex items-center justify-center w-12 h-12 rounded-md bg-[#0C2340] text-[#D4AF37] font-serif text-2xl">
             F
-            <span className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#D4AF37]" />
           </span>
           <div className="leading-tight">
-            <div className="font-serif text-xl text-[#0C2340]">Flowstar</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#526477]">Asset Recovery</div>
+            <div className="font-serif text-2xl text-[#0C2340]">Flowstar</div>
+            <div className="text-xs tracking-[0.3em] uppercase text-[#526477]">Asset Recovery</div>
           </div>
         </Link>
 
