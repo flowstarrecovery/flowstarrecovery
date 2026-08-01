@@ -57,8 +57,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row items-center justify-between text-xs text-[#C1D9E8]">
           <div>© {new Date().getFullYear()} Flowstar Asset Recovery LLC. All rights reserved.</div>
           <div className="flex gap-6 mt-3 md:mt-0">
-            <Link to="/privacy" className="hover:text-[#D4AF37]">Privacy</Link>
-            <Link to="/terms" className="hover:text-[#D4AF37]">Terms</Link>
+            <Link to="/privacy" className="hover:text-[#D4AF37]">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-[#D4AF37]">Terms & Conditions</Link>
           </div>
         </div>
       </div>
