@@ -1,6 +1,8 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "@/pages/Home";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
@@ -27,6 +29,8 @@ function App() {
         </main>
         <Footer />
         <Toaster richColors position="top-right" />
+        <SpeedInsights />
+        <Analytics />
       </BrowserRouter>
     </div>
   );

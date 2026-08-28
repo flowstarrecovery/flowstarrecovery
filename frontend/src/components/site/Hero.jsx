@@ -81,7 +81,7 @@ export default function Hero() {
             >
               <div className="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37] mb-1">Did you know?</div>
               <p className="text-xs leading-snug text-[#E4F0F5]">
-                Billions of dollars in unclaimed property are held by state governments across the country.
+                Billions of dollars in unclaimed property are held by state governments across the country?
               </p>
             </div>
 
