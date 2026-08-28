@@ -197,7 +197,7 @@ export default function TermsConditions() {
             <p>Address: 2775 Orchard Run Rd PMB 322, Dayton, OH 45449, USA</p>
           </div>
         </Section>
-        
+
       </div>
     </div>
   );
