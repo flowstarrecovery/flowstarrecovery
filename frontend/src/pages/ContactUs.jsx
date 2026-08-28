@@ -22,10 +22,6 @@ export default function ContactUs() {
           <h1 className="font-serif font-light text-5xl sm:text-6xl lg:text-7xl text-[#0C2340] leading-[1.02]">
             Contact <em className="font-medium">Us</em>
           </h1>
-          <p className="mt-6 text-lg text-[#526477] max-w-2xl mx-auto leading-relaxed">
-            Have a case in mind or a question about surplus funds? Reach out and a senior associate will
-            respond personally within one business day.
-          </p>
         </div>
       </div>
 
