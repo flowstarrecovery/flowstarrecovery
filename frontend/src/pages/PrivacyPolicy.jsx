@@ -2,12 +2,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
-const COMPANY = "Flowstar Asset Recovery, LLC";
-const EMAIL = "hello@flowstarrecovery.com";
-const PHONE = "513-409-3935";
-const ADDRESS = "2775 Orchard Run Rd PMB 322, Dayton, OH 45449";
-const SITE = "https://flowstarrecovery.com";
-
 function Section({ title, children }) {
   return (
     <div className="mb-10">
@@ -33,8 +27,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="mt-6 text-lg text-[#C1D9E8] max-w-2xl leading-relaxed">
-            Your privacy matters to us. This policy explains how {COMPANY} collects, uses, shares, and
-            protects your information when you visit our site or use our services.
+            Flowstar Asset Recovery LLC
           </p>
         </div>
       </div>
@@ -45,87 +38,114 @@ export default function PrivacyPolicy() {
           <ArrowLeft size={14} /> Back to home
         </Link>
 
-        <p className="text-[#0C2340] font-semibold text-lg mb-12">{COMPANY}</p>
-
-        <Section title="Privacy Policy">
-          <p>
-            This Privacy Policy explains how {COMPANY} (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) collects,
-            uses, and protects information when you visit {SITE} or communicate with us, including by SMS.
-          </p>
-        </Section>
+        <p className="text-[#526477] leading-relaxed text-base lg:text-lg mb-12">
+          This Privacy Policy explains how Flowstar Asset Recovery LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
+          collects, uses, and protects information when you visit https://flowstarrecovery.com or
+          communicate with us, including by SMS.
+        </p>
 
         <Section title="Information We Collect and Use">
           <p>
             We may collect your name, phone number, email address, mailing address, and case or claim details
-            when you submit a form, request a consultation, or contact us. We use this information to evaluate
-            and process surplus-fund or related claims, contact you about your inquiry, send reminders and
-            updates, and improve our website and services.
+            when you submit a form, request a consultation, or contact us.
+          </p>
+          <p>
+            We use this information to evaluate and process surplus-fund, asset-recovery, or related claims;
+            contact you about your inquiry; send reminders and updates; and improve our website and services.
           </p>
         </Section>
 
         <Section title="SMS Communications">
           <p>
-            If you provide your mobile number and consent on our forms, you agree to receive text messages from
-            {" "}{COMPANY} about surplus funds, case alerts, appointment reminders, order or case updates, and
-            related services. Required consent language includes:
+            If you provide your mobile number and consent through our forms, you agree to receive text messages
+            from Flowstar Asset Recovery LLC regarding surplus funds, property or asset alerts, appointment
+            reminders, order or case updates, and related services.
           </p>
+          <p>Required consent language includes:</p>
           <p className="italic">
-            &ldquo;I consent to receive occasional promotional text messages from {COMPANY} at the phone number
-            provided. Frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP
-            to opt out.&rdquo;
-          </p>
-          <p className="italic">
-            &ldquo;I consent to receive non-marketing text messages from {COMPANY} about my order updates,
-            appointment reminder, etc. Frequency may vary. Message &amp; data rates may apply. Text HELP for
+            &ldquo;I consent to receive occasional promotional text messages from Flowstar Asset Recovery LLC at
+            the phone number provided. Frequency may vary. Message &amp; data rates may apply. Text Help for
             assistance, reply STOP to opt out.&rdquo;
           </p>
+          <p className="italic">
+            &ldquo;I consent to receive non-marketing text messages from Flowstar Asset Recovery LLC about my
+            order updates, appointment reminder, etc. Frequency may vary. Message &amp; data rates may apply.
+            Text Help for assistance, reply STOP to opt out.&rdquo;
+          </p>
           <p>
-            You can cancel SMS at any time by texting &ldquo;STOP&rdquo; to the number that is messaging you; after
-            you send &ldquo;STOP,&rdquo; we will send a confirmation SMS and you will no longer receive SMS from us.
-            For help, reply &ldquo;HELP&rdquo; or contact us at {EMAIL} or {PHONE}. Message and data rates may apply,
-            frequency may vary, most major U.S. carriers support the service but are not liable for delayed or
-            undelivered messages, and you must be at least 18; we follow TCPA and CTIA guidelines.
+            You can cancel SMS messages at any time by texting &ldquo;STOP&rdquo; to the number that is messaging
+            you. After you send &ldquo;STOP,&rdquo; we will send a confirmation SMS and you will no longer receive
+            SMS messages from us.
+          </p>
+          <p>
+            For help, reply &ldquo;HELP&rdquo; or contact us at hello@flowstarrecovery.com or +1 513-409-3935.
+          </p>
+          <p>
+            Message and data rates may apply. Message frequency may vary. Most major U.S. carriers support the
+            service but are not liable for delayed or undelivered messages. You must be at least 18 years old to
+            use the SMS service. We follow applicable TCPA and CTIA guidelines.
           </p>
         </Section>
 
         <Section title="Cookies and Tracking">
           <p>
             Our website uses cookies to enable core functionality, remember preferences, analyze traffic, and
-            enhance your experience. By using the site, you agree to the use of cookies as described in this
-            Privacy Policy; some third parties we use may also set cookies under their own policies.
+            enhance your experience.
+          </p>
+          <p>
+            By using the site, you agree to the use of cookies as described in this Privacy Policy at
+            https://flowstarrecovery.com/privacy-policy. Some third parties we use may also set cookies under
+            their own privacy policies.
           </p>
         </Section>
 
         <Section title="Sharing and Security">
           <p className="text-[#0C2340] font-semibold">
             No mobile information will be shared with third parties or affiliates for marketing or promotional
-            purposes. Limited sharing with subcontractors is permitted only for essential services (such as
-            customer service), and under strict confidentiality requirements. Opt-in data and consent
-            information related to text messaging will never be disclosed to any third party.
+            purposes.
           </p>
           <p>
-            We do not sell your personal information. We may share it with attorneys, professional partners,
-            service providers, or relevant government or county offices as needed to evaluate or process your
-            claim, under appropriate safeguards. We use reasonable security measures to help protect your
-            information, though no method of transmission or storage is completely secure.
+            Limited sharing with subcontractors is permitted only when necessary to provide essential services,
+            such as customer service, website operations, or claim processing, and is subject to appropriate
+            confidentiality requirements.
+          </p>
+          <p>
+            Opt-in data and consent information related to text messaging will never be disclosed to any third
+            party for marketing or promotional purposes.
+          </p>
+          <p>
+            We do not sell your personal information. We may share information with attorneys, professional
+            partners, service providers, or relevant government, county, or other public offices when reasonably
+            necessary to evaluate or process your claim, subject to appropriate safeguards.
+          </p>
+          <p>
+            We use reasonable administrative, technical, and organizational security measures to help protect
+            your information. However, no method of transmission over the internet or method of electronic
+            storage is completely secure, and we cannot guarantee absolute security.
           </p>
         </Section>
 
         <Section title="Your Choices and Changes">
+          <p>You may update your contact information by contacting us using the information provided below.</p>
           <p>
-            You may update your contact details by reaching out to us and may opt out of marketing SMS at any
-            time as described above. We may update this Privacy Policy periodically; your continued use of the
-            site after changes are posted means you accept the updated policy.
+            You may opt out of marketing SMS messages at any time by following the instructions above. You may
+            also contact us if you have questions about your personal information or our data practices.
+          </p>
+          <p>
+            We may update this Privacy Policy periodically. Any changes will be posted on this page. Your
+            continued use of our website after changes are posted constitutes acceptance of the updated Privacy
+            Policy.
           </p>
         </Section>
 
         <Section title="Contact">
-          <p>For questions about this Privacy Policy or our data practices, contact:</p>
-          <div className="text-[#0C2340]">
-            <p>{COMPANY}</p>
-            <p>{ADDRESS}</p>
-            <p>{EMAIL}</p>
-            <p>{PHONE}</p>
+          <p>For questions about this Privacy Policy or our data practices, please contact:</p>
+          <div className="text-[#0C2340] space-y-1">
+            <p className="font-semibold">Flowstar Asset Recovery LLC</p>
+            <p>Email: hello@flowstarrecovery.com</p>
+            <p>Phone: +1 513-409-3935</p>
+            <p>Website: https://flowstarrecovery.com</p>
+            <p>Address: 2775 Orchard Run Rd PMB 322, Dayton, OH 45449, USA</p>
           </div>
         </Section>
       </div>

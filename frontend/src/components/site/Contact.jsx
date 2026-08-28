@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "sonner";
 import { Loader2, Mail, Phone, MapPin } from "lucide-react";
@@ -111,8 +112,9 @@ export default function Contact() {
                 className="mt-1 border-white/30 data-[state=checked]:bg-[#D4AF37] data-[state=checked]:border-[#D4AF37] data-[state=checked]:text-[#0C2340]"
               />
               <span className="text-sm text-[#C1D9E8] leading-relaxed">
-                I consent to receive occasional promotional text messages from Flowstar Asset Recovery LLC at the phone number provided. 
-                Frequency may vary. Message & data rates may apply. Text Help for assistance, reply STOP to opt out.
+                I consent to receive occasional promotional text messages from Flowstar Asset Recovery LLC at
+                the phone number provided. Frequency may vary. Message &amp; data rates may apply. Text Help for
+                assistance, reply STOP to opt out.
               </span>
             </label>
             <label className="flex items-start gap-3 cursor-pointer" data-testid="consent-promotional-label">
@@ -123,8 +125,9 @@ export default function Contact() {
                 className="mt-1 border-white/30 data-[state=checked]:bg-[#D4AF37] data-[state=checked]:border-[#D4AF37] data-[state=checked]:text-[#0C2340]"
               />
               <span className="text-sm text-[#C1D9E8] leading-relaxed">
-                I consent to receive non-marketing text messages from Flowstar Asset Recovery LLC about my order updates, appointment reminder, etc. 
-                Frequency may vary. Message & data rates may apply. Text Help for assistance, reply STOP to opt out.
+                I consent to receive non-marketing text messages from Flowstar Asset Recovery LLC about my order
+                updates, appointment reminder, etc. Frequency may vary. Message &amp; data rates may apply. Text
+                Help for assistance, reply STOP to opt out.
               </span>
             </label>
           </div>
@@ -137,6 +140,13 @@ export default function Contact() {
             {loading ? <Loader2 size={16} className="animate-spin" /> : null}
             Send Message
           </button>
+
+          <div className="pt-4 border-t border-white/10 text-xs text-[#C1D9E8]" data-testid="contact-legal-links">
+            By submitting, you agree to our{" "}
+            <Link to="/privacy" className="text-[#D4AF37] hover:underline">Privacy Policy</Link>{" "}
+            and{" "}
+            <Link to="/terms" className="text-[#D4AF37] hover:underline">Terms &amp; Conditions</Link>.
+          </div>
         </form>
       </div>
     </section>
