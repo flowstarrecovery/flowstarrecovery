@@ -41,6 +41,12 @@ export default function Contact() {
     <section data-testid="contact" id="contact" className="relative py-24 lg:py-32 bg-[#0C2340] text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
         <div className="lg:col-span-5">
+          <img
+            src="/flowstar-lighthouse.png"
+            alt="Flowstar Asset Recovery"
+            className="w-32 h-auto mb-8"
+            data-testid="contact-logo"
+          />
           <div className="uppercase tracking-[0.25em] text-xs text-[#D4AF37] mb-4">Speak With Us</div>
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white font-light leading-[1.05]">
             Have a case in mind? <em className="font-medium text-[#D4AF37]">Let&apos;s talk.</em>
