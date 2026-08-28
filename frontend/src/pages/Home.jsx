@@ -6,7 +6,6 @@ import ClaimChecker from "@/components/site/ClaimChecker";
 import About from "@/components/site/About";
 import BlogPreview from "@/components/site/BlogPreview";
 import FAQ from "@/components/site/FAQ";
-import Contact from "@/components/site/Contact";
 
 export default function Home() {
   useEffect(() => {
@@ -26,7 +25,6 @@ export default function Home() {
       <About />
       <BlogPreview />
       <FAQ />
-      <Contact />
     </div>
   );
 }

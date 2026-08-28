@@ -58,11 +58,11 @@ export default function BlogPost() {
             <h3 className="font-serif text-2xl">Think this might apply to you?</h3>
           </div>
           <Link
-            to="/#checker"
+            to="/contact"
             data-testid="blog-post-cta"
             className="inline-flex items-center gap-2 px-6 h-12 rounded-full bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold"
           >
-            Check Eligibility <ArrowRight size={16} />
+            Contact Us <ArrowRight size={16} />
           </Link>
         </div>
       </div>
