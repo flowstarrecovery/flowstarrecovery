@@ -64,7 +64,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <a href="/#contact">
+          <a href="/contact">
             <Button
               data-testid="header-cta"
               className="bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full px-6 h-11 shadow-none"
@@ -97,7 +97,7 @@ export default function Header() {
                 {n.label}
               </a>
             ))}
-            <a href="/#contact">
+            <a href="/contact">
               <Button
                 data-testid="mobile-header-cta"
                 className="w-full bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full"
