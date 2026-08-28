@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "sonner";
 import { Loader2, Mail, Phone, MapPin } from "lucide-react";
@@ -145,6 +146,13 @@ export default function Contact() {
             {loading ? <Loader2 size={16} className="animate-spin" /> : null}
             Send Message
           </button>
+
+          <div className="pt-4 border-t border-white/10 text-xs text-[#C1D9E8]" data-testid="contact-legal-links">
+            By submitting, you agree to our{" "}
+            <Link to="/privacy" className="text-[#D4AF37] hover:underline">Privacy Policy</Link>{" "}
+            and{" "}
+            <Link to="/terms" className="text-[#D4AF37] hover:underline">Terms &amp; Conditions</Link>.
+          </div>
         </form>
       </div>
     </section>
