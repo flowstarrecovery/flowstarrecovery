@@ -41,12 +41,6 @@ export default function Contact() {
     <section data-testid="contact" id="contact" className="relative py-24 lg:py-32 bg-[#0C2340] text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
         <div className="lg:col-span-5">
-          <img
-            src="/flowstar-lighthouse.png"
-            alt="Flowstar Asset Recovery"
-            className="w-32 h-auto -mt-10 lg:-mt-16 mb-8"
-            data-testid="contact-logo"
-          />
           <div className="uppercase tracking-[0.25em] text-xs text-[#D4AF37] mb-4">Speak With Us</div>
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white font-light leading-[1.05]">
             Have a case in mind? <em className="font-medium text-[#D4AF37]">Let&apos;s talk.</em>
@@ -117,9 +111,8 @@ export default function Contact() {
                 className="mt-1 border-white/30 data-[state=checked]:bg-[#D4AF37] data-[state=checked]:border-[#D4AF37] data-[state=checked]:text-[#0C2340]"
               />
               <span className="text-sm text-[#C1D9E8] leading-relaxed">
-                I consent to receive SMS messages from Flowstar Asset Recovery, LLC related to account updates,
-                transaction confirmations, service alerts, or other non-promotional communications. Message
-                frequency may vary. Msg&amp;data rates may apply. Reply STOP to unsubscribe. HELP for assistance.
+                I consent to receive occasional promotional text messages from Flowstar Asset Recovery LLC at the phone number provided. 
+                Frequency may vary. Message & data rates may apply. Text Help for assistance, reply STOP to opt out.
               </span>
             </label>
             <label className="flex items-start gap-3 cursor-pointer" data-testid="consent-promotional-label">
@@ -130,9 +123,8 @@ export default function Contact() {
                 className="mt-1 border-white/30 data-[state=checked]:bg-[#D4AF37] data-[state=checked]:border-[#D4AF37] data-[state=checked]:text-[#0C2340]"
               />
               <span className="text-sm text-[#C1D9E8] leading-relaxed">
-                I agree to receive occasional promotional SMS from Flowstar Asset Recovery, LLC about offers,
-                discounts, or marketing updates. Message frequency may vary. Msg&amp;data rates may apply. Reply
-                STOP to opt out, HELP for assistance.
+                I consent to receive non-marketing text messages from Flowstar Asset Recovery LLC about my order updates, appointment reminder, etc. 
+                Frequency may vary. Message & data rates may apply. Text Help for assistance, reply STOP to opt out.
               </span>
             </label>
           </div>
