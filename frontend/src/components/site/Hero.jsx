@@ -73,6 +73,28 @@ export default function Hero() {
               className="rounded-[24px] shadow-2xl object-cover w-full h-[520px]"
               data-testid="hero-image"
             />
+
+            {/* Top ribbon */}
+            <div
+              data-testid="hero-ribbon-top"
+              className="absolute -top-4 -left-6 max-w-[280px] bg-[#0C2340] text-white rounded-2xl px-5 py-4 shadow-xl border-l-4 border-[#D4AF37]"
+            >
+              <div className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] mb-1">Did you know?</div>
+              <p className="text-sm leading-snug text-[#E4F0F5]">
+                Billions of dollars in unclaimed property are held by state governments across the country.
+              </p>
+            </div>
+
+            {/* Bottom ribbon */}
+            <div
+              data-testid="hero-ribbon-bottom"
+              className="absolute -bottom-6 -right-4 max-w-[320px] bg-white text-[#0C2340] rounded-2xl px-5 py-4 shadow-xl border-l-4 border-[#D4AF37]"
+            >
+              <div className="text-[10px] uppercase tracking-[0.25em] text-[#526477] mb-1">Time matters</div>
+              <p className="text-sm leading-snug">
+                Each state has its own laws, procedures, and deadlines for claiming unclaimed property. Waiting too long can make recovery more complicated.
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
