@@ -197,22 +197,7 @@ export default function TermsConditions() {
             <p>Address: 2775 Orchard Run Rd PMB 322, Dayton, OH 45449, USA</p>
           </div>
         </Section>
-
-        <Section title="Consents For Contact Us Form">
-          <p>
-            By checking this box, I consent to receive transactional messages related to my account, orders,
-            or services I have requested from Flowstar Asset Recovery LLC. These messages may include
-            appointment reminders, order confirmations, case updates, and account notifications, among others.
-            Message frequency may vary. Message &amp; data rates may apply. Reply HELP for help or STOP to opt
-            out.
-          </p>
-          <p>
-            By checking this box, I consent to receive marketing and promotional messages, including special
-            offers, discounts, service updates, and other promotional communications from Flowstar Asset
-            Recovery LLC. Message frequency may vary. Message &amp; data rates may apply. Reply HELP for help
-            or STOP to opt out.
-          </p>
-        </Section>
+        
       </div>
     </div>
   );
