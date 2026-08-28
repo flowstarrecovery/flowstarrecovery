@@ -21,7 +21,8 @@ export default function Footer() {
           <div className="mt-8 space-y-2 text-sm text-[#C1D9E8]">
             <div className="flex items-center gap-2"><Mail size={14} /> hello@flowstarrecovery.com</div>
             <div className="flex items-center gap-2"><Phone size={14} /> 513-409-3935</div>
-            <div className="flex items-start gap-2"><MapPin size={14} className="mt-0.5" /> <span>2775 Orchard Run Rd PMB 322, Dayton, OH 45449</span></div>
+            <div className="flex items-start gap-2"><MapPin size={14} className="mt-0.5" /> <span>2775 Orchard Run Rd PMB 322
+              Dayton, OH 45449</span></div>
           </div>
         </div>
 
