@@ -44,7 +44,7 @@ export default function Contact() {
           <img
             src="/flowstar-lighthouse.png"
             alt="Flowstar Asset Recovery"
-            className="w-32 h-auto mb-8"
+            className="w-32 h-auto -mt-10 lg:-mt-16 mb-8"
             data-testid="contact-logo"
           />
           <div className="uppercase tracking-[0.25em] text-xs text-[#D4AF37] mb-4">Speak With Us</div>
