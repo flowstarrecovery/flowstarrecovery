@@ -7,12 +7,13 @@ export default function Footer() {
       <div className="absolute inset-x-0 -top-12 h-12 bg-gradient-to-b from-transparent to-[#0C2340]" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-[#D4AF37] text-[#0C2340] font-serif text-2xl">F</span>
-            <div>
-              <div className="font-serif text-2xl">Flowstar Asset Recovery</div>
-              <div className="text-[10px] tracking-[0.3em] uppercase text-[#C1D9E8]">Surplus Funds Specialists</div>
-            </div>
+          <div className="mb-6">
+            <img
+              src="/flowstar-footer-logo.png"
+              alt="Flowstar Asset Recovery"
+              className="h-20 w-auto"
+              data-testid="footer-logo"
+            />
           </div>
           <p className="text-[#C1D9E8] max-w-md leading-relaxed">
             Recovering what rightfully belongs to you. A boutique asset recovery firm helping former owners,
