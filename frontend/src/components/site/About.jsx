@@ -26,7 +26,7 @@ export default function About() {
             A quieter, more <em className="font-medium">careful</em> way to recover what&apos;s yours.
           </h2>
           <p className="mt-6 text-lg text-[#526477] leading-relaxed">
-            Flowstar Asset Recovery is a boutique firm of paralegals and title researchers focused on a single
+            Flowstar Asset Recovery LLC is a boutique firm of paralegals and title researchers based in Ohio who are focused on a single
             problem: rightful owners losing access to surplus proceeds simply because no one walks them
             through the paperwork. We close that gap — with discipline, integrity, and a contingency-only model.
           </p>

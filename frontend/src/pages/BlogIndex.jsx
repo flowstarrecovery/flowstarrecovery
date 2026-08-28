@@ -8,9 +8,29 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 export default function BlogIndex() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    axios.get(`${API}/blog/posts`).then((r) => setPosts(r.data)).catch(() => {});
-  }, []);
+useEffect(() => {
+  axios
+    .get(`${API}/blog/posts`)
+    .then((r) => {
+      console.log("Blog API response:", r.data);
+      console.log("Is array?", Array.isArray(r.data));
+
+      if (Array.isArray(r.data)) {
+        setPosts(r.data);
+      } else if (Array.isArray(r.data.posts)) {
+        setPosts(r.data.posts);
+      } else if (Array.isArray(r.data.data)) {
+        setPosts(r.data.data);
+      } else {
+        console.error("Unexpected response:", r.data);
+        setPosts([]);
+      }
+    })
+    .catch((err) => {
+      console.error("API error:", err);
+      setPosts([]);
+    });
+}, []);
 
   return (
     <div data-testid="blog-index-page" className="bg-[#F8FBFC] pt-32 pb-24">
