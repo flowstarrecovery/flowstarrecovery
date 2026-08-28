@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const NAV = [
   { label: "Process", href: "/#process" },
   { label: "Eligibility", href: "/#checker" },
+  { label: "About", href: "/#about" },
   { label: "Resources", href: "/#resources" },
   { label: "FAQ", href: "/#faq" },
 ];
@@ -40,8 +41,8 @@ export default function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-3 group"
         >
-          <span className="relative inline-flex items-center justify-center w-12 h-12 rounded-md bg-[#0C2340] text-[#D4AF37] font-serif text-2xl">
-            F
+          <span className="relative inline-flex items-center justify-center w-12 h-12 overflow-hidden">
+            <img src="/flowstar-favicon.png" alt="Flowstar" className="w-full h-full object-contain" />
           </span>
           <div className="leading-tight">
             <div className="font-serif text-2xl text-[#0C2340]">Flowstar</div>
