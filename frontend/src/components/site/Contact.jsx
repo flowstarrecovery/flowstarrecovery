@@ -54,7 +54,7 @@ export default function Contact() {
           </h2>
           <p className="mt-6 text-lg text-[#C1D9E8] leading-relaxed max-w-md">
             Prefer to speak to a person? Send a note and a senior associate will respond personally
-            within one business day.
+            within one business day. Our team is approachable, experienced, and here to help you explore your options. No pressure, no confusing terms, just clear answers and genuine support.
           </p>
 
           <div className="mt-10 space-y-4">
