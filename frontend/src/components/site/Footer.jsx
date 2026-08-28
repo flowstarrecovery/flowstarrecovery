@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src="/flowstar-footer-logo.png"
               alt="Flowstar Asset Recovery"
-              className="h-24 w-auto object-contain"
+              className="h-40 w-auto object-contain"
               data-testid="footer-logo"
             />
           </div>
