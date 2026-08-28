@@ -67,7 +67,7 @@ export default function Header() {
           <a href="/contact">
             <Button
               data-testid="header-cta"
-              className="bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full px-6 h-11 shadow-none"
+              className="bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full px-6 h-11 shadow-none transition-transform duration-150 hover:scale-105 active:scale-95"
             >
               Contact Us
             </Button>
@@ -100,7 +100,7 @@ export default function Header() {
             <a href="/contact">
               <Button
                 data-testid="mobile-header-cta"
-                className="w-full bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full"
+                className="w-full bg-[#D4AF37] hover:bg-[#B5952F] text-[#0C2340] font-semibold rounded-full transition-transform duration-150 hover:scale-105 active:scale-95"
               >
                 Contact Us
               </Button>
