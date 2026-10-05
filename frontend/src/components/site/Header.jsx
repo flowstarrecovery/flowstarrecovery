@@ -45,8 +45,8 @@ export default function Header() {
             <img src="/flowstar-favicon.png" alt="Flowstar" className="w-full h-full object-contain" />
           </span>
           <div className="leading-tight">
-            <div className="font-serif text-2xl text-[#0C2340]">Flowstar</div>
-            <div className="text-xs tracking-[0.3em] uppercase text-[#526477]">Asset Recovery</div>
+            <div className="font-serif font-bold text-2xl text-[#0C2340]">Flowstar</div>
+            <div className="font-bold text-xs tracking-[0.3em] uppercase text-[#526477]">Asset Recovery</div>
           </div>
         </Link>
 
